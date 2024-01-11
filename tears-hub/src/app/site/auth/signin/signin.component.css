@@ -1,0 +1,84 @@
+.form  {
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.label-field {
+    color: white;
+    width: 40%;
+    padding: 5%;
+}
+
+/* .input-field {
+    width: 80%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+} */
+
+.submit-btn {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.submit-btn:hover {
+    color: black;
+    background-color: white;
+}
+
+.submit-btn:active{
+    background: transparent;
+    color: white;
+
+}
+
+.form-header {
+    /* background-color: #f0f0f0; */
+    padding: 5px;
+    /* color: #0c0c0c; */
+    border-radius: 25px 25px 0 0;
+}
+
+.form-footer {
+    background-color: #f0f0f0;
+    color: #0c0c0c;
+    padding: 5px;
+    border-radius: 0 0 25px 25px;
+}
+
+.input-field {
+    padding: 10px;
+    font-size: large;
+    background: none;
+    border: 1px solid #F0F0F0;
+    border-radius: 50px;
+    width: 70%;
+    color: white;
+}
+
+.subscribe-btn {
+    background-color: rgb(0, 255, 255);
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.subscribe-btn:hover {
+    background-color: white;
+}
+
+@media (max-width: 767px) {
+    
+    .input-field{
+        width: 80%;
+    }
+
+}

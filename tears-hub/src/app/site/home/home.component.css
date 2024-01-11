@@ -1,0 +1,433 @@
+.nav-bar {
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.join {
+    padding: 10px;
+}
+
+.nav-button {
+    border: 1px solid white;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.asset-bar{
+    padding: 10px;
+}
+
+.asset-button {
+    /* border-bottom: 1px solid white; */
+    padding: 10px;
+    margin:30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.collab {
+    text-align: center;
+}
+
+.coolab-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.title {
+    border: 1px solid #F0F0F0;
+    border-radius: 25px;
+    background-color:white;
+    color: black;
+    display: block;
+}
+
+.heading{
+    text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+.sub-heading {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: medium;
+    text-align: center;
+}
+
+.intro-image-body{
+    /* background-image: url("https://images.pexels.com/photos/667838/pexels-photo-667838.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover; */
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 25px 25px 0 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.intro-image {
+    border-radius: 25px 25px 0 0;
+    width: 100%;
+    display: block;
+    filter: blur(5px);
+}
+
+.intro-image-button {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    border: 3px solid aqua;
+    border-radius: 50px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+    background-color: aqua;
+}
+
+.intro-image-button:hover {
+    background-color: white;
+    color: black;
+    border: 3px solid white;
+}
+
+.about {
+    text-align: center;
+}
+
+.about-cards {
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about-card {
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    width: 20%;
+    background: linear-gradient(45deg, black, rgb(71, 71, 71));
+}
+
+.about-card:hover {
+    background: linear-gradient(45deg, black,rgba(1, 87, 109, 0.445));
+}
+
+.about-card-image {
+    width: 100%;
+    height: 50%;
+    border-radius: 25px 25px 0 0;
+    background-size: cover;
+}
+
+.about-card-base {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.features {
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feature-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feature-card {
+    padding: 20px;
+    text-align: left;
+    background: linear-gradient( #0c0c0c, rgba(1, 87, 109, 0.226));
+    border: 1px solid gray;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+
+.feature-card:hover {
+    background: linear-gradient( #0c0c0c, rgba(105, 105, 105, 0.226));
+    border: 1px solid gray;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.team {
+    text-align: center;
+}
+
+.team-cards {
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.team-card {
+    border: 1px solid gray;
+    border-radius: 25px;
+    padding: 50px;
+    width: 25%;
+    text-align: center;
+    background: linear-gradient(45deg, black, rgba(59, 59, 59, 0.466));
+}
+
+.profile-card {
+    display: inline-flex;
+}
+
+.profile-icon {
+    height: 60px;
+    padding: 20px;
+}
+
+.message {
+    text-align: left;
+    color: #F0F0F0;
+    font-size: large;
+}
+
+.joinus {
+    text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    background: radial-gradient(ellipse at center,rgba(1, 87, 109, 0.226),  #0c0c0c);
+}
+
+.joinus-heading {
+    font-size: xxx-large;
+    font-weight: bold;
+}
+
+.joinus-input {
+    border: 1px solid gray;
+    border-radius: 50px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-field {
+    padding: 20px;
+    font-size: large;
+    background: transparent;
+    border: 1px solid #F0F0F0;
+    border-radius: 50px;
+    width: 35%;
+    color: white;
+}
+
+.subscribe-btn {
+    background-color: aqua;
+    padding: 20px;
+    width: 20%;
+    border-radius: 50px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f0f0f0;
+    border: 1px solid #F0F0F0;
+    border-radius: 25px 25px 0 0;
+    padding: 20px
+}
+
+.footer-icon {
+    height: 30px;
+    padding: 10px;
+}
+
+@media (min-width: 737px) and  (max-width: 1024px)  {
+    .asset-button{
+        margin: 1px;
+    }
+    .heading{
+        font-size: x-large;
+        width: 90%;
+    }
+    .about-card {
+        width: 25%;
+        height: 40vh;
+    }
+
+    .feature {
+        width: 100%;
+    }
+
+    .feature-cards {
+        width: 100%;
+    }
+
+    .team-card {
+        width: 60%;
+        padding: 30px;
+    }
+
+    .joinus {
+        width: 80%;
+    }
+
+    .joinus-heading {
+        font-size: x-large;
+    }
+
+    .joinus-input {
+        display: block;
+        justify-content:unset;
+        width: 70%;
+    }
+
+    .input-field {
+        display: inline-block;
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .subscribe-btn {
+        width: 60%;
+    }
+
+    /* .intro-image {
+        height: 30vh;
+    } */
+
+}
+
+@media (max-width: 767px)  {
+    /* .intro-image {
+        height: 50vh;
+    } */
+
+    .nav-bar {
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .nav-button {
+        padding: 3px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 25px;
+    }
+
+    .asset-bar{
+        display: none;
+    }
+
+    .title{
+        border-radius: 15px;
+    }
+
+    .heading{
+        font-size: 25px;
+        width: 90%;
+    }
+
+    .matter{
+        height: 50%;
+    }
+
+    .sub-heading{
+        width: 90%;
+        font-size: small;
+        font-weight: lighter;
+    }
+
+    .about-cards {
+        display: inline-block;
+    }
+
+    .about-card {
+        display: block;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    .features {
+        width: 100%;
+    }
+
+    .feature-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .team-card {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .joinus {
+        width: 90%;
+    }
+
+    .joinus-heading {
+        font-size: large;
+    }
+
+    .joinus-input {
+        display: block;
+        justify-content:unset;
+    }
+
+    .input-field {
+        display: inline-block;
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .subscribe-btn {
+        width: 60%;
+    }
+
+    .footer {
+        border-radius: 15px;
+    }
+
+    .intro-image-body {
+        width: 90%;
+    }
+
+    .intro-image-button {
+        width: 50%;
+        padding: 5px;
+    }
+}

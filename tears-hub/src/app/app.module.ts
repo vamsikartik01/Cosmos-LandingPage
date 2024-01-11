@@ -9,6 +9,8 @@ import { HomeComponent } from './site/home/home.component';
 import { AuthComponent } from './site/auth/auth.component';
 import { SignupComponent } from './site/auth/signup/signup.component';
 import { SigninComponent } from './site/auth/signin/signin.component';
+import { AuthService } from './services/auth.service';
+import { HttpClientModule } from '@angular/common/http';
 
 const appRoutes: Routes = [
   { path: '',component: HomeComponent },
@@ -35,8 +37,9 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     RouterModule.forRoot(appRoutes),
+    HttpClientModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

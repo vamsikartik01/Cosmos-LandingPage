@@ -1,17 +1,28 @@
-<p>Sign Up</p>
-<form method="post"  (submit)="submitForm()">
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" [(ngModel)]="userData.email" required>
-    <p>{{ userData.email }}</p>
-
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" [(ngModel)]="userData.username" required>
-    <p>{{ userData.username }}</p>
-
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" [(ngModel)]="userData.password" required>
-    <p>{{ userData.password }}</p>
-
-    <button type="submit">Sign Up</button>
-    {{status}}
-</form>
+<div class="form-header">
+    <h2>Sign Up</h2>
+</div>
+<div class="form">
+    <form method="post"  (submit)="submitForm()">
+        <label class="label-field" for="email" hidden>Email:</label>
+        <input class="input-field" type="email" id="email" name="email" placeholder="email address" [(ngModel)]="userData.email" required>
+        <br/><br/>
+        <label class="label-field" for="username" hidden>Username:</label>
+        <input class="input-field" type="text" id="username" name="username" placeholder="username" [(ngModel)]="userData.username" required>
+        <br/><br/>
+        <label class="label-field" for="password" hidden>Password:</label>
+        <input class="input-field" type="password" id="password" name="password" placeholder="password" [(ngModel)]="userData.password" required>
+        <br/><br/>
+        <label class="label-field" for="re-password" hidden>Password:</label>
+        <input class="input-field" type="password" id="re-password" name="re-password" placeholder="re-enter password" [(ngModel)]="rePassword" required>
+        <br/><br/>
+        <button class="subscribe-btn" type="submit">Sign Up</button>
+        <br/><br/>
+        {{status}}{{message}}
+    </form>
+</div>
+<div class="form-footer">
+    <br/>
+    <a class="submit-btn" routerLink="/auth/signin">Sign In</a> 
+    <p>Already have an account yet? Sign In </p>
+</div>
+<br/><br/>

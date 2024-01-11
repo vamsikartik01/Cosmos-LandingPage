@@ -1,7 +1,137 @@
 <div class="header">
-    <a routerLink="">Tears Hub</a>
-    <a [routerLink]="['auth']" style="float: right;">Join Us</a>
-</div>
-<div class="body">
-    <h1>Welcome to Tears Hub</h1>
+    <div class="nav-bar">
+        <div class="logo">
+            <a class="logo" routerLink="">{{siteName}}</a>
+        </div>
+        <div class="asset-bar">
+            <a class="asset-button"  href="#title" >Home</a>
+            <a class="asset-button"  href="#about" >About Us</a>
+            <a class="asset-button"  href="#features" >Features</a>
+            <a class="asset-button"  href="#team" >Team</a>
+        </div>
+        <div class="join"><a class="nav-button"  [routerLink]="['auth/signin']">Sign In</a></div>
+    </div>
+    <div class="title" id="title">
+        <div class="matter">
+            <div class="heading">
+                <p>Transform your living with effortless home control</p>
+            </div>
+            <div class="sub-heading">
+                <p>
+                    {{username}}When everything around us is smart! why not electrnics too? Sign up to elevate your living experience with convenience and sophistication. Welcome to a smarter, more connected home.
+                </p>
+            </div>
+        </div>
+        <a class="nav-button">Demo</a>
+        <div class="intro-image-body">
+            <img class="intro-image" src="https://{{domain}}/main/assets/media/intro.png" alt="intro.png">
+            <a class="intro-image-button" (click)="demo()">Demo Dashboard</a>
+        </div>
+    </div>
+    <br/><br/>
+
+    <div class="about" id="about">
+        <a class="nav-button">About Us</a>
+        <h1>Meet {{siteName}}</h1>
+        <p>A Smart Home management platform to increase your home security with smart devices</p>
+        <br/>
+        <div class="about-cards">
+            <div class="about-card">
+                <img class="about-card-image" alt="home.jpg" src="https://images.pexels.com/photos/3921702/pexels-photo-3921702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                <div class="about-card-base">
+                    <h3>Easy to Integrate </h3>
+                <p>Connect the Hub to the Space with just a Button</p>
+                </div>
+            </div>
+            <div class="about-card">
+                <img class="about-card-image" alt="home.jpg" src="https://images.pexels.com/photos/19701594/pexels-photo-19701594/free-photo-of-smart-home-devices-connection-to-the-main-base-diagram.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                <div class="about-card-base">
+                    <h3>Connect more! Save more!</h3>
+                <p>Use Smart Hubs to connect multiple devices at one place</p>
+                </div>
+            </div>
+            <div class="about-card">
+                <img class="about-card-image" alt="home.jpg" src="https://images.pexels.com/photos/2251247/pexels-photo-2251247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                <div class="about-card-base">
+                    <h3>Flexible Room Management</h3>
+                <p>Customize your Rooms with Hubs and Devices.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br/><br/>
+
+    <div class="features" id="features">
+        <a class="nav-button">Features</a>
+        <h1>Control Everything Everywhere</h1>
+        <p>Here is Everything a customer needs and We promise we listen and update the features to enhance the experience you interact with your home</p>
+        <br/>
+        <div class="feature-cards">
+            <div class="feature-card">
+                <h3>Room Customisation</h3>
+                <p>Set every room as you want to control the devices</p>
+            </div>
+            <div class="feature-card">
+                <h3>Device Timers</h3>
+                <p>Set individual timers for your device to change state</p>
+            </div>
+            <div class="feature-card">
+                <h3>Live Weather Updates</h3>
+                <p>Reminds you to carry your umbrella. so you dont get wet on a rainy day</p>
+            </div>
+            <div class="feature-card">
+                <h3>Note Taker</h3>
+                <p>Add a note to the family when you are late to home</p>
+            </div>
+            <div class="feature-card">
+                <h3>Easy Installation</h3>
+                <p>Connect to WIFI, Connect to appliance, Add in Home Space</p>
+            </div>
+            <div class="feature-card">
+                <h3>Routines</h3>
+                <p>Enable routines to trigger repetitive actions and modes</p>
+            </div>
+        </div>
+    </div>
+
+    <br/><br/>
+
+    <div class="team" id="team">
+        <a class="nav-button">Team</a>
+        <h1>Story Behind Us</h1>
+        <p>Listen What Our Founders Say About {{siteName}}</p>
+        <div class="team-cards">
+            <div class="team-card">
+                <div class="profile-card">
+                    <h1>Message from Founders</h1>
+                </div>
+                <p class="message"> we set out to simplify and elevate the way we live. Our mission is clear - to seamlessly integrate technology into homes, making everyday life effortlessly intelligent. We believe that simplicity is the ultimate sophistication, and our journey is dedicated to bringing smart, accessible 
+                    solutions to homes everywhere. Welcome to a future where innovation meets simplicity, and where our commitment is to make your home truly smart and your life delightfully uncomplicated.</p>
+            </div>
+        </div>
+    </div>
+
+    <br/><br/>
+
+    <div class="joinus">
+        <p class="joinus-heading">Unlock the future of home living with {{siteName}} – join us and transform your space into a Smart Home</p>
+        <br/>
+        <div class="joinus-input">
+            <input class="input-field" type="email" placeholder="Email" id="email-field" name="email-field" [(ngModel)]="email">
+            <input class="input-field" type="text" placeholder="Name" id="name-field" name="name-field" [(ngModel)]="username">
+            <button class="subscribe-btn" type="submit" (click)="contact()">Join Us</button>
+        </div>
+        <br/>
+        <p>We will contact you through the email you provided for demo and the pricing plan</p>
+    </div>
+
+    <br/><br/>
+    <div class="footer">
+        <div class="right-footer">
+            <a href="https://github.com/vamsikartik01/JamesBond" target="_blank"><img class="footer-icon" alt="git.svg" src="https://{{domain}}/main/assets/svgs/github.svg"></a>
+            <a href="https://www.linkedin.com/in/vamsi-kartik-balaga-a5343219b/" target="_blank"><img class="footer-icon" alt="linkedin.svg" src="https://{{domain}}/main/assets/svgs/linkedin.svg"></a>
+            <a href="mailto:vamsikartik01@gmail.com" target="_blank"><img class="footer-icon" alt="mail.svg" src="https://{{domain}}/main/assets/svgs/mail.svg" ></a>
+        </div>
+    </div>
 </div>

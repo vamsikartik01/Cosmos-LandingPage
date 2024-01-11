@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* @import url("../node_modules/bootstrap/dist/css/bootstrap.min.css"); */
+body {
+    margin: auto;
+    background-color: #0c0c0c;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.logo {
+    color: white;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+    text-decoration: none;
+    text-shadow:black 4px 4px;  
+}
